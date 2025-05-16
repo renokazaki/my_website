@@ -1,14 +1,14 @@
-
-
+ 
+import { Canvas } from '@react-three/fiber';
+ 
 function App() {
-
   return (
-    <>
-      <div className='text-red-500 text-3xl font-bold underline'>
-        hello
-      </div>
-    </>
-  )
+    <Canvas>
+      <mesh>
+        <boxGeometry />
+      </mesh>
+    </Canvas>
+  );
 }
-
-export default App
+ 
+export default App;
