@@ -2,10 +2,7 @@ import { Environment ,useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import * as THREE from "three";
-import { ProjectSection } from "./Section/Project/ProjectSection";
-import { HomeSection } from "./Section/Home/HomeSection";
-import { SkillSection } from "./Section/Skill/SkillSection";
-import { ContactSection } from "./Section/Contact/ContactSection";
+import { HomeSection, SkillSection, ProjectSection, ContactSection } from "./Section/index";
 
 const SECTIONS_DISTANCE = 10;
 
@@ -25,13 +22,15 @@ export default function Experience() {
       <mesh>  
         <boxGeometry />
         <meshStandardMaterial color="white" />
+        </mesh>
+
+        {/* Section */}
         <group ref={sceneContainer}>
-     <HomeSection/>
+       <HomeSection/>
        <SkillSection SECTIONS_DISTANCE={SECTIONS_DISTANCE}/>
        <ProjectSection SECTIONS_DISTANCE={SECTIONS_DISTANCE}/>
        <ContactSection SECTIONS_DISTANCE={SECTIONS_DISTANCE}/>
       </group>
-      </mesh>
     </>
   );
 };
