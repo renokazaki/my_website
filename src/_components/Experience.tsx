@@ -1,9 +1,11 @@
 import { Environment ,useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import Star from "./Star";
 import { useRef } from "react";
 import * as THREE from "three";
-import SectionTitle from "./SectionTitle/SectionTitle";
+import { ProjectSection } from "./Section/Project/ProjectSection";
+import { HomeSection } from "./Section/Home/HomeSection";
+import { SkillSection } from "./Section/Skill/SkillSection";
+import { ContactSection } from "./Section/Contact/ContactSection";
 
 const SECTIONS_DISTANCE = 10;
 
@@ -20,27 +22,14 @@ export default function Experience() {
     return (
     <>
       <Environment preset="sunset" />
-      <mesh>
+      <mesh>  
         <boxGeometry />
         <meshStandardMaterial color="white" />
-        <Star position={[1, 1, 1]} />
         <group ref={sceneContainer}>
-        {/* HOME */}
-        <group>
-          <SectionTitle position-x={0.5}>HOME</SectionTitle>
-        </group>
-        {/* SKILLS */}
-        <group position-z={SECTIONS_DISTANCE}>
-          <SectionTitle position-x={0.5}>SKILLS</SectionTitle>
-        </group>
-        {/* PROJECTS */}
-        <group position-z={2 * SECTIONS_DISTANCE}>
-          <SectionTitle position-x={0.5}>PROJECTS</SectionTitle>
-        </group>
-        {/* CONTACT */}
-        <group position-z={3 * SECTIONS_DISTANCE}>
-          <SectionTitle position-x={0.5}>CONTACT</SectionTitle>
-        </group>
+     <HomeSection/>
+       <SkillSection SECTIONS_DISTANCE={SECTIONS_DISTANCE}/>
+       <ProjectSection SECTIONS_DISTANCE={SECTIONS_DISTANCE}/>
+       <ContactSection SECTIONS_DISTANCE={SECTIONS_DISTANCE}/>
       </group>
       </mesh>
     </>
