@@ -5,7 +5,8 @@ Star by Kay Lousberg (https://market.pmnd.rs/model/star)
 */
 
 import { useGLTF } from "@react-three/drei";
-import type { JSX } from "react";
+import { useFrame } from "@react-three/fiber";
+import { useRef, type JSX } from "react";
 import * as THREE from "three";
 
 export default function Star(props:JSX.IntrinsicElements['group']) {
@@ -17,8 +18,16 @@ export default function Star(props:JSX.IntrinsicElements['group']) {
       "Yellow.030": THREE.Material;
     };
   };
+
+  const ref = useRef<THREE.Group | null>(null);
+  useFrame(() => {
+    if (ref.current) {
+      ref.current.rotation.y += 0.06;
+    }
+  });
+
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} ref={ref}>
       <mesh
         geometry={nodes.star.geometry}
         material={materials["Yellow.030"]}
