@@ -1,9 +1,9 @@
  
 import { Canvas } from '@react-three/fiber';
 import Experience from './_components/Experience';
-import { ScrollControls } from '@react-three/drei';
+import { ScrollControls,Scroll } from '@react-three/drei';
 import { config } from './config';
- 
+import Interface from './_components/Section/InterFace'; 
 function App() {
   return (
     <Canvas camera={{ position: [0, 0.5, 5], fov: 42 }}>
@@ -17,6 +17,9 @@ function App() {
     <group position-y={-1}>
       <Experience />
     </group>
+    <Scroll html>
+            <Interface />
+          </Scroll>
     </ScrollControls>
   </Canvas>
   );
