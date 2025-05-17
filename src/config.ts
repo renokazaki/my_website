@@ -45,31 +45,31 @@ export const config = {
   projects: [
     {
       name: "Project 1",
-      image: "../public/textures/screen.jpg",
+      image: "../textures/screen.jpg",
       description: "Description of Project 1",
       link: "https://github.com/renokazaki",
     },
     {
       name: "Project 2",
-      image: "../public/textures/screen.jpg",
+      image: "../textures/screen.jpg",
       description: "Description of Project 2",
       link: "https://github.com/renokazaki",
     },
     {
       name: "Project 3",
-      image: "../public/textures/screen.jpg",
+      image: "../textures/screen.jpg",
       description: "Description of Project 3",
       link: "https://github.com/renokazaki",
     },
     {
       name: "Project 4",
-      image: "../public/textures/screen.jpg",
+      image: "../textures/screen.jpg",
       description: "Description of Project 4",
       link: "https://github.com/renokazaki",
     },
     {
       name: "Project 5",
-      image: "../public/textures/screen.jpg",
+      image: "../textures/screen.jpg",
       description: "Description of Project 5",
       link: "https://github.com/renokazaki",
     },
