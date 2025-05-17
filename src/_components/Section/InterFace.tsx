@@ -1,17 +1,22 @@
+import { HomeInterface ,SkillInterface, ProjectInterface, ContactInterface} from "./index";
+
+  
+
 export default function Interface() {
+
+
     return (
       <div className="interface">
         <div className="sections">
           {/* HOME */}
-          <section className="section section--bottom">HOME</section>
+          <HomeInterface/>
           {/* SKILLS */}
-          <section className="section section--right">SKILLS</section>
+            <SkillInterface/>
           {/* PROJECTS */}
-          <section className="section section--left">PROJECTS</section>
+          <ProjectInterface />
           {/* CONTACT */}
-          <section className="section section--left">CONTACT</section>
+          <ContactInterface/>
         </div>
       </div>
     );
   };
-  
