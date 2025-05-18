@@ -6,8 +6,8 @@ export default function Interface() {
 
 
     return (
-      <div className="interface">
-        <div className="sections">
+      <div className="w-screen flex flex-col items-center">
+        <div className="max-w-[1200px] w-full">
           {/* HOME */}
           <HomeInterface/>
           {/* SKILLS */}

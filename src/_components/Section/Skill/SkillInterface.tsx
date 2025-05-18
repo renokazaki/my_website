@@ -4,9 +4,9 @@ import { config } from "../../../config";
 export default function SkillInterface() {
     return (
       <>
-      <section className="section section--right">
+      <section className="h-screen flex justify-end items-center">
           <motion.div
-            className="skills"
+            className="p-4"
             whileInView={"visible"}
             initial={{
               opacity: 0,
@@ -20,7 +20,7 @@ export default function SkillInterface() {
             {config.skills.map((skill, idx) => (
               <motion.div
                 key={skill.name}
-                className="skill"
+                className="bg-white/50 backdrop-blur-md rounded-lg p-4 mb-4 w-80 max-w-full"
                 initial={{ opacity: 0 }}
                 variants={{
                   visible: {
@@ -32,17 +32,17 @@ export default function SkillInterface() {
                   delay: idx * 0.62,
                 }}
               >
-                <div className="skill__label">
+                <div className="flex items-center gap-4 mb-2">
                   <img
-                    className="skill__label__image"
+                    className="w-8 h-8"
                     src={skill.icon}
                     alt={skill.name}
                   />
-                  <h2 className="skill__label__name">{skill.name}</h2>
+                  <h2 className="text-text font-bold text-xl m-0">{skill.name}</h2>
                 </div>
-                <div className="skill__level">
+                <div className="bg-black h-2 rounded-lg w-full">
                   <motion.div
-                    className="skill__level__bar"
+                    className="bg-blue-500 h-full rounded-lg w-0"
                     initial={{ width: 0 }}
                     variants={{
                       visible: {
