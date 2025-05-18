@@ -1,16 +1,20 @@
 import SectionTitle from "../SectionTitle"
 import Monitor from "../../ModelsComponents/Monitor"
 import { RoundedBox } from "@react-three/drei"
+import { useMobile } from "../../../hooks/useMobile"
 export const ProjectSection = ({SECTIONS_DISTANCE}: {SECTIONS_DISTANCE: number}) => {
+  const {isMobile} = useMobile();
+
+
   return (
     <>
    {/* PROJECTS */}
    <group position-z={2 * SECTIONS_DISTANCE}>
           <group position-x={1}>
             <SectionTitle
-              position-x={-0.5}
-              position-z={0}
-              rotation-y={-Math.PI / 6}
+              position-x={isMobile?-2:-0.5}
+              rotation-y={isMobile?0:6}
+              position-z={isMobile?-3:1}
             >
               PROJECTS
             </SectionTitle>

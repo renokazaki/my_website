@@ -3,14 +3,17 @@ import SectionTitle from "../SectionTitle"
 import CouchSmall from "../../ModelsComponents/CouchSmall"
 import Lamp from "../../ModelsComponents/Lamp"
 import { MeshDistortMaterial } from "@react-three/drei"
+import { useMobile } from "../../../hooks/useMobile"
 
 export const SkillSection = ({SECTIONS_DISTANCE}: {SECTIONS_DISTANCE: number}) => {
+  const {isMobile} = useMobile();
   return (
     <>
      {/* SKILLS */}
      <group position-z={SECTIONS_DISTANCE}>
           <group position-x={-2}>
-            <SectionTitle position-z={1.5} rotation-y={Math.PI / 6}>
+            <SectionTitle position-x={isMobile ? 1.3 : 0.5}
+            position-y={isMobile ? 0 : 0.5} rotation-y={isMobile ?0 :Math.PI / 6}>
               SKILLS
             </SectionTitle>
             <BookCase position-z={-2} />

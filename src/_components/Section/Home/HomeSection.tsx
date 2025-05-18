@@ -6,20 +6,24 @@ import PalmTree from "../../ModelsComponents/PalmTree"
 import Star from "../../ModelsComponents/Star"
 import MacBookPro from "../../ModelsComponents/MacBookPro"
 import * as THREE from "three"
+import { useMobile } from "../../../hooks/useMobile"
 
 export const HomeSection = () => {
+  const {isMobile} = useMobile();
   return (
     <>
        {/* HOME */}
             <group>
-            <SectionTitle position-x={0.5}>HOME</SectionTitle>
-
+            <SectionTitle 
+            position-x={isMobile ? -0.6 : 0.5}
+            position-y={isMobile ? 1 : 0.5}>HOME</SectionTitle>
+            
             <Star position-z={0} position-y={2.2} scale={0.3} />
           <Float floatIntensity={2} speed={2}>
             <MacBookPro
-              position-x={-1}
-              position-y={0.5}
-              position-z={0}
+              position-x={isMobile ? -0.5 : -1}
+              position-y={isMobile ? 1 : 0.5}
+              position-z={isMobile ? -2 : 0}
               scale={0.3}
               rotation-y={Math.PI / 4}
             />
@@ -32,9 +36,10 @@ export const HomeSection = () => {
           <Float floatIntensity={0.6}>
             <Center disableY disableZ>
               <SectionTitle
-                size={0.8}
-                position-y={1.6}
-                position-z={-3}
+                size={isMobile ? 0: 0.8}
+                position-x={isMobile ? 2 : 0.8}
+                position-y={isMobile ? 2 : 1.6}
+                position-z={isMobile ? -5 : -3}
                 bevelEnabled
                 bevelThickness={0.3}
               >
@@ -44,16 +49,17 @@ export const HomeSection = () => {
           </Float>
           <Center disableY disableZ>
             <SectionTitle
-              size={1.2}
-              position-x={-2.6}
-              position-z={-3}
+              size={isMobile ? 0 : 1.2}
+              position-x={isMobile ? 1.5 : -2.6}
+              position-z={isMobile ? -3 : -3}
               bevelEnabled
               bevelThickness={0.3}
               rotation-y={Math.PI / 10}
             >
               {config.home.subtitle}
             </SectionTitle>
-          </Center>            </group>
+          </Center>            
+          </group>
     </>
   )
 }
