@@ -12,9 +12,9 @@ export default function HomeInterface() {
 
     return (
       <>
-      <section className="section section--bottom">
+      <section className="h-screen flex justify-center items-end">
           <motion.div
-            className="scroll-down"
+            className="w-7 h-[42px] border-2 border-text rounded-xl flex justify-center mb-16"
             initial={{
               opacity: 0,
             }}
@@ -23,7 +23,7 @@ export default function HomeInterface() {
             }}
           >
             <motion.div
-              className="scroll-down__wheel"
+              className="bg-black w-[3px] h-[10px] rounded-[2px] mt-1-down__wheel"
               initial={{
                 translateY: 0,
               }}
