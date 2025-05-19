@@ -1,5 +1,4 @@
 import { useProgress } from "@react-three/drei";
-import { config } from "../config";
 
 export const Loading = () => {
   const { progress, active } = useProgress();
@@ -11,8 +10,8 @@ export const Loading = () => {
         ${active ? "opacity-100" : "opacity-0 pointer-events-none"}`}
     >
       <div>
-        <h1 className="text-6xl font-black uppercase text-text m-0">
-          {config.title}
+        <h1 className="text-6xl font-black text-text m-0">
+        Welcome
         </h1>
         <div className="w-full h-4 bg-gray-500 relative overflow-hidden rounded mt-4">
           <div

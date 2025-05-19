@@ -1,7 +1,9 @@
 import { motion } from "framer-motion"
 import { config } from "../../../config"
+import { useMobile } from "../../../hooks/useMobile"
 
 export default function ProjectInterface() {
+  const {isMobile} = useMobile();
   return (
     <>
     <section className="h-screen flex justify-start items-center">
@@ -30,7 +32,7 @@ export default function ProjectInterface() {
                     }}
                     transition={{
                       duration: 1,
-                      delay: idx * 0.5,
+                      delay:isMobile ? idx * 0.1 : idx * 0.4,
                     }}
                   >
                     <a href={project.link} target="_blank" rel="noopener noreferrer">

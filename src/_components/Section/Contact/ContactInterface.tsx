@@ -24,20 +24,20 @@ export default function ContactInterface() {
               <a href={config.contact.socials.github} target="_blank">
                 <img
                   className="w-8 h-8"
-                  src="icons/linkedin.png"
-                  alt="linkedin"
+                  src="icons/github_icon.jpg"
+                  alt="github"
                 />
               </a>
               <a href={config.contact.socials.zenn} target="_blank">
                 <img
-                  className="contact__socials__icon"
-                  src="icons/twitter.png"
-                  alt="twitter"
+                  className="w-8 h-8"
+                  src="icons/zenn_icon.jpg"
+                  alt="zenn"
                 />
               </a>
               <a href={`mailto:${config.contact.mail}`} target="_blank">
                 <img
-                  className="contact__socials__icon"
+                  className="w-8 h-8"
                   src="icons/email.png"
                   alt="email"
                 />
