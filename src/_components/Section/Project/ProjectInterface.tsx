@@ -8,7 +8,7 @@ export default function ProjectInterface() {
     <>
     <section className="h-screen flex justify-start items-center">
             <motion.div
-              className="p-2 md:p-4 w-full md:w-[500px] max-w-full justify-center"
+              className="p-2 md:p-4 w-full h-full md:w-[500px]  max-w-full justify-center"
               whileInView="visible"
               initial={{
                 opacity: 0,
@@ -46,8 +46,21 @@ export default function ProjectInterface() {
                         <p className="text-text-light text-xs md:text-base line-clamp-2 md:line-clamp-none">
                           {project.description}
                         </p>
+                        <div className="hidden md:flex gap-2 mb-auto items-end justify-end">
+                      {project.techIcons?.map((techIcon, techIdx) => (
+                        <img
+                          key={techIdx} 
+                          className="w-4 h-4" 
+                          src={techIcon.icon}
+                          alt={techIcon.name || `Tech ${techIdx + 1}`} 
+                          title={techIcon.name} 
+                        />
+                      ))}
+                    </div>
                       </div>
+                      
                     </a>
+                    
                   </motion.div>
                 ))}
               </div>

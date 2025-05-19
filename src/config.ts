@@ -37,28 +37,52 @@ export const config = {
   ],
   projects: [
     {
-      name: "ActiveLink",
+      name: "習慣促進SNS",
       image: "../textures/ActiveLink.PNG",
       description: "習慣促進SNS",
       link: "https://active-link-frontend.vercel.app",
+      techIcons: [
+        { name: "React", icon: "/icons/react.png" },
+        { name: "Three.js", icon: "/icons/threejs.png" },
+        { name: "TypeScript", icon: "/icons/typescript.png" },
+        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+      ]
     },
     {
-      name: "TaskManagement",
+      name: "タスク管理アプリ",
       image: "../textures/TaskManagement.png",
       description: "タスク管理アプリ",
       link: "https://task-management-application-sable.vercel.app/",
+      techIcons: [
+        { name: "React", icon: "/icons/react.png" },
+        { name: "Three.js", icon: "/icons/threejs.png" },
+        { name: "TypeScript", icon: "/icons/typescript.png" },
+        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+      ]
     },
     {
       name: "縦スクロールwebサイト",
       image: "../textures/VerticalScroll.PNG",
       description: "縦スクロールwebサイト",
       link: "https://first-gsap-scrollapp.vercel.app",
+      techIcons: [
+        { name: "React", icon: "/icons/react.png" },
+        { name: "Three.js", icon: "/icons/threejs.png" },
+        { name: "TypeScript", icon: "/icons/typescript.png" },
+        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+      ]
     },
     {
       name: "ハンバーガー積み上げゲーム",
       image: "../textures/HamburgerStack.PNG",
       description: "ハンバーガー積み上げゲーム",
       link: "https://tower-battle.vercel.app",
+      techIcons: [
+        { name: "React", icon: "/icons/react.png" },
+        { name: "Three.js", icon: "/icons/threejs.png" },
+        { name: "TypeScript", icon: "/icons/typescript.png" },
+        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+      ]
     },
 
   ],
