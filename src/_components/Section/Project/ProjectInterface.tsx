@@ -42,10 +42,8 @@ export default function ProjectInterface() {
                         alt={project.name}
                       />
                       <div className="p-2 md:p-4">
-                        <h2 className="text-text font-bold text-sm md:text-xl m-0">{project.name}</h2>
-                        <p className="text-text-light text-xs md:text-base line-clamp-2 md:line-clamp-none">
-                          {project.description}
-                        </p>
+                        <h2 className="text-text font-medium text-sm md:text-xl m-0">{project.name}</h2>
+                     
                         <div className="hidden md:flex gap-2 mb-auto items-end justify-end">
                       {project.techIcons?.map((techIcon, techIdx) => (
                         <img

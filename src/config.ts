@@ -37,51 +37,66 @@ export const config = {
   ],
   projects: [
     {
-      name: "習慣促進SNS",
+      name: "習慣応援SNS",
       image: "../textures/ActiveLink.PNG",
-      description: "習慣促進SNS",
       link: "https://active-link-frontend.vercel.app",
       techIcons: [
-        { name: "React", icon: "/icons/react.png" },
-        { name: "Three.js", icon: "/icons/threejs.png" },
-        { name: "TypeScript", icon: "/icons/typescript.png" },
-        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+        { name: "Next.js", icon: "/icons/Nextjs.png" },
+        { name: "Hono.js", icon: "/icons/Honojs.png" },
+        { name: "TypeScript", icon: "/icons/TypeScript.png" },
+        { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" },
+        { name: "Prisma", icon: "/icons/Prisma.png" },
+        { name: "Clerk", icon: "/icons/Clerk.png" },
+        { name: "Bun",icon: "/icons/Bun.png"},
       ]
     },
     {
       name: "タスク管理アプリ",
       image: "../textures/TaskManagement.png",
-      description: "タスク管理アプリ",
       link: "https://task-management-application-sable.vercel.app/",
       techIcons: [
-        { name: "React", icon: "/icons/react.png" },
-        { name: "Three.js", icon: "/icons/threejs.png" },
-        { name: "TypeScript", icon: "/icons/typescript.png" },
-        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+        { name: "Next.js", icon: "/icons/Nextjs.png" },
+        { name: "TypeScript", icon: "/icons/TypeScript.png" },
+        { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" },
+        { name: "Prisma", icon: "/icons/Prisma.png" },
+        { name: "Clerk", icon: "/icons/Clerk.png" },
+        { name: "npm", icon: "/icons/Npm.png" },
+
       ]
     },
     {
-      name: "縦スクロールwebサイト",
+      name: "家計簿アプリ",
+      image: "../textures/MoneyManagement.PNG",
+      link: "https://moneymanagement-jade.vercel.app",
+      techIcons: [
+        { name: "Next.js", icon: "/icons/Nextjs.png" },
+        { name: "TypeScript", icon: "/icons/TypeScript.png" },
+        { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" },
+        { name: "Prisma", icon: "/icons/Prisma.png" },
+        { name: "Clerk", icon: "/icons/Clerk.png" }, 
+        { name: "npm", icon: "/icons/Npm.png" },
+      ]
+    },
+    {
+      name: "縦スクロールサイト",
       image: "../textures/VerticalScroll.PNG",
-      description: "縦スクロールwebサイト",
       link: "https://first-gsap-scrollapp.vercel.app",
       techIcons: [
-        { name: "React", icon: "/icons/react.png" },
+        { name: "React", icon: "/icons/React.png" },
+        { name: "TypeScript", icon: "/icons/TypeScript.png" },
         { name: "Three.js", icon: "/icons/threejs.png" },
-        { name: "TypeScript", icon: "/icons/typescript.png" },
-        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+        { name: "GSAP", icon: "/icons/GSAP.png" }
       ]
     },
     {
       name: "ハンバーガー積み上げゲーム",
       image: "../textures/HamburgerStack.PNG",
-      description: "ハンバーガー積み上げゲーム",
       link: "https://tower-battle.vercel.app",
       techIcons: [
-        { name: "React", icon: "/icons/react.png" },
+        { name: "React", icon: "/icons/React.png" },
         { name: "Three.js", icon: "/icons/threejs.png" },
-        { name: "TypeScript", icon: "/icons/typescript.png" },
-        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+        { name: "TypeScript", icon: "/icons/TypeScript.png" },
+        { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" }
       ]
     },
 
