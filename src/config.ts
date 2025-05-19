@@ -1,40 +1,10 @@
 export const config = {
   title: "3D Web Developer",
-  sections: ["home", "skills", "projects", "contact"],
+  sections: ["home",  "projects","profile", "contact"],
   home: {
     title: "Ren Okazaki",
-    subtitle: "Web Developer",
   },
-  skills: [
-    {
-      name: "React",
-      icon: "icons/React.png",
-    },
-    {
-      name: "JavaScript",
-      icon: "icons/javascript.png",
-    },
-    {
-      name: "Three.js",
-      icon: "icons/threejs.png",
-    },
-    {
-      name: "Blender",
-      icon: "icons/blender-3d.png",
-    },
-    {
-      name: "French",
-      icon: "icons/france.png",
-    },
-    {
-      name: "English",
-      icon: "icons/usa.png",
-    },
-    {
-      name: "Japanese",
-      icon: "icons/japan.png",
-    },
-  ],
+
   projects: [
     {
       name: "習慣応援SNS",
@@ -104,9 +74,37 @@ export const config = {
         { name: "npm", icon: "/icons/Npm.png" },
       ]
     },
-
-
   ],
+  
+    // 自己紹介セクションの構造
+    about: {
+      profile: {
+        title: "プロフィール",
+        icon: "/icons/profile.png",
+        content: "名前：岡崎 蓮\n西暦：1999年8月21日 25歳\n"
+      },
+      education: {
+        title: "学歴・職歴",
+        icon: "/icons/education.png",
+        content: "2023年 駒澤大学 卒業\n2023-現在 株式会社ウィズ・ワン エンジニア"
+      },
+      skills: {
+        title: "保有資格",
+        icon: "/icons/skills.png",
+        content: "・TOEIC スコア830点\n・基本情報技術者試験\n・ServiceNow CSA\n・ServiceNow CAD\n・ServiceNow ITSM\n・秘書技能検定準1級",
+      },
+      personality: {
+        title: "性格",
+        icon: "/icons/values.png",
+        content: "・前向き\n・向上心\n・大食い"
+      },
+      hobbies: {
+        title: "趣味",
+        icon: "/icons/hobbies.png",
+        content: "・運動\n・映画鑑賞\n・旅行\n"
+      },
+    },
+  
   contact: {
     name: "Ren Okazaki",
     address: "Tokyo, Japan",
@@ -115,5 +113,6 @@ export const config = {
       zenn: "https://zenn.dev/ren21",
     },
     mail: "ren84690@gmail.com",
-  },
-};
+  }
+}
+

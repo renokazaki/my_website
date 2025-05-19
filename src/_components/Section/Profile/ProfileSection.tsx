@@ -4,11 +4,11 @@ import Lamp from "../../ModelsComponents/Lamp"
 import { useMobile } from "../../../hooks/useMobile"
 import { Cloud, PresentationControls } from "@react-three/drei"
 
-export const SkillSection = ({SECTIONS_DISTANCE}: {SECTIONS_DISTANCE: number}) => {
+export const ProfileSection = ({SECTIONS_DISTANCE}: {SECTIONS_DISTANCE: number}) => {
   const {isMobile} = useMobile();
   return (
     <>
-     {/* SKILLS */}
+     {/* Profile */}
               <Cloud
                 position={[8, 0, 0]} 
                 segments={10} 
@@ -16,12 +16,12 @@ export const SkillSection = ({SECTIONS_DISTANCE}: {SECTIONS_DISTANCE: number}) =
                 opacity={0.3}        // opacityを上げる
                 seed={10}   
               />
-     <group position-z={SECTIONS_DISTANCE}>
+     <group position-z={2 * SECTIONS_DISTANCE  - 2.5}>
           <group position-x={-2}>
           <PresentationControls>
             <SectionTitle position-x={isMobile ? 1.3 : 0.5}
             position-y={isMobile ? 0 : 0.5} rotation-y={isMobile ?0 :Math.PI / 6}>
-              SKILLS
+              PROFILE
             </SectionTitle>
             </PresentationControls>
             <PresentationControls>
