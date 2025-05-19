@@ -17,7 +17,7 @@ export const ProjectSection = ({SECTIONS_DISTANCE}: {SECTIONS_DISTANCE: number})
                    opacity={0.3}        // opacityを上げる
                    seed={3}             // 形状の種（変更すると形が変わる）
                  />
-   <group position-z={2 * SECTIONS_DISTANCE}>
+   <group position-z={2 * SECTIONS_DISTANCE  - 2.5}>
           <group position-x={1.5}>
           <PresentationControls>
             <SectionTitle
