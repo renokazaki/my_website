@@ -1,17 +1,17 @@
 import {HomeSection} from "./Home/HomeSection";
-import {SkillSection} from "./Skill/SkillSection";
+import {ProfileSection} from "./Profile/ProfileSection";
 import {ProjectSection} from "./Project/ProjectSection";
 import {ContactSection} from "./Contact/ContactSection";
 
-export { HomeSection, SkillSection, ProjectSection, ContactSection };
+export { HomeSection, ProfileSection, ProjectSection, ContactSection };
 
 
 import HomeInterface from "./Home/HomeInterface";
-import SkillInterface from "./Skill/SkillInterface";
+import ProfileInterface from "./Profile/ProfileInterface";
 import ProjectInterface from "./Project/ProjectInterface";
 import ContactInterface from "./Contact/ContactInterface";
 
-export { HomeInterface ,SkillInterface, ProjectInterface, ContactInterface };
+export { HomeInterface ,ProfileInterface, ProjectInterface, ContactInterface };
 
 
 

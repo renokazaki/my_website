@@ -1,4 +1,4 @@
-import { HomeInterface ,SkillInterface, ProjectInterface, ContactInterface} from "./index";
+import { HomeInterface ,ProfileInterface, ProjectInterface, ContactInterface} from "./index";
 
   
 
@@ -10,10 +10,10 @@ export default function Interface() {
         <div className="max-w-[1200px] w-full">
           {/* HOME */}
           <HomeInterface/>
-          {/* SKILLS */}
-            <SkillInterface/>
           {/* PROJECTS */}
           <ProjectInterface />
+             {/* Profile */}
+             <ProfileInterface/>
           {/* CONTACT */}
           <ContactInterface/>
         </div>

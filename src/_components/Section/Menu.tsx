@@ -4,11 +4,11 @@ export default function Menu() {
           <a className="font-bold text-text hover:text-blue-300 hover:cursor-pointer" href="#home">
             Home
           </a>
-          <a className="font-bold text-text hover:text-blue-300 hover:cursor-pointer" href="#skills">
-            Skills
-          </a>
           <a className="font-bold text-text hover:text-blue-300 hover:cursor-pointer" href="#projects">
             Projects
+          </a>
+          <a className="font-bold text-text hover:text-blue-300 hover:cursor-pointer" href="#profile">
+            Profile
           </a>
           <a className="font-bold text-text hover:text-blue-300 hover:cursor-pointer" href="#contact">
             Contact
