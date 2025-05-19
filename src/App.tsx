@@ -1,7 +1,7 @@
  
 import { Canvas } from '@react-three/fiber';
 import Experience from './_components/Experience';
-import { ScrollControls,Scroll } from '@react-three/drei';
+import { ScrollControls,Scroll, Float } from '@react-three/drei';
 import { config } from './config';
 import Interface from './_components/Section/InterFace'; 
 import { MotionConfig } from 'framer-motion';
@@ -14,7 +14,11 @@ function App() {
     <>
     <Loading />
     <Canvas camera={{ position: [0, 0.5, 5], fov: 42 }}>
-      <Sky />
+      <Float floatIntensity={1} speed={1}>
+        <Suspense fallback={null}>
+          <Sky />
+        </Suspense>
+      </Float>
     <ScrollControls
           pages={config.sections.length}
           damping={0.1}

@@ -40,6 +40,7 @@ export default function Experience() {
     return (
     <>
       <Environment preset="sunset" />
+      <ambientLight intensity={2.5} />
       <mesh>  
         <boxGeometry />
         <meshStandardMaterial color="white" />
