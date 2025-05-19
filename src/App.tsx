@@ -8,13 +8,13 @@ import { MotionConfig } from 'framer-motion';
 import Menu from './_components/Section/Menu';
 import { Suspense } from 'react';
 import { Loading } from './_components/Loading';
+import { Sky } from './_components/ModelsComponents/Sky';
 function App() {
   return (
     <>
     <Loading />
     <Canvas camera={{ position: [0, 0.5, 5], fov: 42 }}>
-    <color attach="background" args={["#f5f3ee"]} />
-    <fog attach="fog" args={["#f5f3ee", 10, 50]} />
+      <Sky />
     <ScrollControls
           pages={config.sections.length}
           damping={0.1}
