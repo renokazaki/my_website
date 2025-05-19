@@ -5,7 +5,7 @@ import {config} from "../../../config"
 export default function ContactInterface() {
     return (
       <>
-     <section className="h-screen flex justify-start items-center">
+     <section className="h-screen flex justify-center md:justify-start items-center">
           <motion.div
             className="m-4 p-4 bg-white/50 backdrop-blur-md rounded-lg min-w-[350px]"
             whileInView={"visible"}

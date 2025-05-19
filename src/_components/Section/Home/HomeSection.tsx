@@ -1,6 +1,6 @@
 import { config } from "../../../config"
 import SectionTitle from "../SectionTitle"
-import { Float } from "@react-three/drei"
+import { Cloud, Float, PresentationControls } from "@react-three/drei"
 import { Center } from "@react-three/drei"
 import PalmTree from "../../ModelsComponents/PalmTree"
 import Star from "../../ModelsComponents/Star"
@@ -13,13 +13,32 @@ export const HomeSection = () => {
   return (
     <>
        {/* HOME */}
+
+                 <Cloud
+                   position={[-7, 2, -10]} 
+                   segments={30} 
+                   speed={1} 
+                   opacity={0.3}        // opacityを上げる
+                   seed={2}             // 形状の種（変更すると形が変わる）
+                 />
+                      <Cloud
+                   position={[-14, -5, 0]} 
+                   segments={30} 
+                   speed={1} 
+                   opacity={0.3}        // opacityを上げる
+                   seed={2}             // 形状の種（変更すると形が変わる）
+                 />
             <group>
+            <PresentationControls>
             <SectionTitle 
             position-x={isMobile ? -0.6 : 0.5}
             position-y={isMobile ? 1 : 0.5}>HOME</SectionTitle>
-            
+            </PresentationControls>
+
             <Star position-z={0} position-y={2.2} scale={0.3} />
+
           <Float floatIntensity={2} speed={2}>
+            <PresentationControls>
             <MacBookPro
               position-x={isMobile ? -0.5 : -1}
               position-y={isMobile ? 1 : 0.5}
@@ -27,14 +46,18 @@ export const HomeSection = () => {
               scale={0.3}
               rotation-y={Math.PI / 4}
             />
+            </PresentationControls>
+
           </Float>
+
           <PalmTree
             scale={0.018}
             rotation-y={THREE.MathUtils.degToRad(140)}
             position={[4, 0, -5]}
           />
-          <Float floatIntensity={0.6}>
+          <Float floatIntensity={0.3} speed={0.5}>
             <Center disableY disableZ>
+              <PresentationControls>
               <SectionTitle
                 size={isMobile ? 0: 0.8}
                 position-x={isMobile ? 2 : 0.8}
@@ -45,20 +68,10 @@ export const HomeSection = () => {
               >
                 {config.home.title}
               </SectionTitle>
+              </PresentationControls>
             </Center>
           </Float>
-          <Center disableY disableZ>
-            <SectionTitle
-              size={isMobile ? 0 : 1.2}
-              position-x={isMobile ? 1.5 : -2.6}
-              position-z={isMobile ? -3 : -3}
-              bevelEnabled
-              bevelThickness={0.3}
-              rotation-y={Math.PI / 10}
-            >
-              {config.home.subtitle}
-            </SectionTitle>
-          </Center>            
+    
           </group>
     </>
   )
