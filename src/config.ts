@@ -37,35 +37,54 @@ export const config = {
   ],
   projects: [
     {
-      name: "Project 1",
-      image: "../textures/screen.jpg",
-      description: "Description of Project 1",
-      link: "https://github.com/renokazaki",
+      name: "習慣促進SNS",
+      image: "../textures/ActiveLink.PNG",
+      description: "習慣促進SNS",
+      link: "https://active-link-frontend.vercel.app",
+      techIcons: [
+        { name: "React", icon: "/icons/react.png" },
+        { name: "Three.js", icon: "/icons/threejs.png" },
+        { name: "TypeScript", icon: "/icons/typescript.png" },
+        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+      ]
     },
     {
-      name: "Project 2",
-      image: "../textures/screen.jpg",
-      description: "Description of Project 2",
-      link: "https://github.com/renokazaki",
+      name: "タスク管理アプリ",
+      image: "../textures/TaskManagement.png",
+      description: "タスク管理アプリ",
+      link: "https://task-management-application-sable.vercel.app/",
+      techIcons: [
+        { name: "React", icon: "/icons/react.png" },
+        { name: "Three.js", icon: "/icons/threejs.png" },
+        { name: "TypeScript", icon: "/icons/typescript.png" },
+        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+      ]
     },
     {
-      name: "Project 3",
-      image: "../textures/screen.jpg",
-      description: "Description of Project 3",
-      link: "https://github.com/renokazaki",
+      name: "縦スクロールwebサイト",
+      image: "../textures/VerticalScroll.PNG",
+      description: "縦スクロールwebサイト",
+      link: "https://first-gsap-scrollapp.vercel.app",
+      techIcons: [
+        { name: "React", icon: "/icons/react.png" },
+        { name: "Three.js", icon: "/icons/threejs.png" },
+        { name: "TypeScript", icon: "/icons/typescript.png" },
+        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+      ]
     },
     {
-      name: "Project 4",
-      image: "../textures/screen.jpg",
-      description: "Description of Project 4",
-      link: "https://github.com/renokazaki",
+      name: "ハンバーガー積み上げゲーム",
+      image: "../textures/HamburgerStack.PNG",
+      description: "ハンバーガー積み上げゲーム",
+      link: "https://tower-battle.vercel.app",
+      techIcons: [
+        { name: "React", icon: "/icons/react.png" },
+        { name: "Three.js", icon: "/icons/threejs.png" },
+        { name: "TypeScript", icon: "/icons/typescript.png" },
+        { name: "Tailwind CSS", icon: "/icons/tailwind.png" }
+      ]
     },
-    {
-      name: "Project 5",
-      image: "../textures/screen.jpg",
-      description: "Description of Project 5",
-      link: "https://github.com/renokazaki",
-    },
+
   ],
   contact: {
     name: "Ren Okazaki",

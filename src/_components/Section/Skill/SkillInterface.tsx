@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { config } from "../../../config";
+import { useMobile } from "../../../hooks/useMobile";
 
 export default function SkillInterface() {
+  const {isMobile} = useMobile();
     return (
       <>
       <section className="h-screen flex justify-end items-center">
@@ -29,8 +31,8 @@ export default function SkillInterface() {
                     },
                   }}
                   transition={{
-                    duration: 1,
-                    delay: idx * 0.62,
+                    duration: 0.3,
+                    delay:isMobile ? idx * 0.1 : idx * 0.2,
                   }}
                 >
                   <div className="flex items-center gap-2 md:gap-4 mb-1 md:mb-2">

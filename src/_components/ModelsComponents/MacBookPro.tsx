@@ -7,10 +7,8 @@ Laptop / MacBook Pro by Alex Safayan [CC-BY] (https://creativecommons.org/licens
 import { useGLTF } from "@react-three/drei";
 import type { JSX } from "react";
 import * as THREE from "three";
-import { useTexture } from "@react-three/drei";
 
 export default function MacBookPro(props: JSX.IntrinsicElements['group']) {
-  const screenTexture = useTexture("textures/screen.jpg");
 
   const { nodes, materials } = useGLTF("/models/MacBook Pro.glb") as unknown as {
     nodes: {
@@ -35,7 +33,7 @@ export default function MacBookPro(props: JSX.IntrinsicElements['group']) {
     <group {...props} dispose={null}>
        <mesh position={[0.02, 0.85, -0.66]}>
         <planeGeometry args={[2.55, 1.55]} />
-        <meshStandardMaterial map={screenTexture} />
+        <meshStandardMaterial  />
       </mesh>
       <mesh
         geometry={nodes.mesh485226736.geometry}
@@ -73,5 +71,4 @@ export default function MacBookPro(props: JSX.IntrinsicElements['group']) {
   );
 }
 useGLTF.preload("/models/MacBook Pro.glb");
-useTexture.preload("textures/screen.jpg");
 
