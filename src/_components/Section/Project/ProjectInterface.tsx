@@ -8,7 +8,7 @@ export default function ProjectInterface() {
     <>
     <section className="h-screen flex justify-start items-center">
             <motion.div
-              className="p-2 md:p-4 w-full h-full md:w-[500px]  max-w-full justify-center"
+              className="p-2 md:p-4 w-full h-full  md:w-[650px] lg:w-[700px] xl:w-[800px] max-w-full justify-center"
               whileInView="visible"
               initial={{
                 opacity: 0,

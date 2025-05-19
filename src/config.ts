@@ -8,7 +8,7 @@ export const config = {
   skills: [
     {
       name: "React",
-      icon: "icons/react-native.png",
+      icon: "icons/React.png",
     },
     {
       name: "JavaScript",
@@ -45,6 +45,7 @@ export const config = {
         { name: "Hono.js", icon: "/icons/Honojs.png" },
         { name: "TypeScript", icon: "/icons/TypeScript.png" },
         { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" },
+        { name: "Shadcn/ui", icon: "/icons/Shadcn.png" },
         { name: "Prisma", icon: "/icons/Prisma.png" },
         { name: "Clerk", icon: "/icons/Clerk.png" },
         { name: "Bun",icon: "/icons/Bun.png"},
@@ -58,6 +59,7 @@ export const config = {
         { name: "Next.js", icon: "/icons/Nextjs.png" },
         { name: "TypeScript", icon: "/icons/TypeScript.png" },
         { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" },
+        { name: "Shadcn/ui", icon: "/icons/Shadcn.png" },
         { name: "Prisma", icon: "/icons/Prisma.png" },
         { name: "Clerk", icon: "/icons/Clerk.png" },
         { name: "npm", icon: "/icons/Npm.png" },
@@ -72,6 +74,7 @@ export const config = {
         { name: "Next.js", icon: "/icons/Nextjs.png" },
         { name: "TypeScript", icon: "/icons/TypeScript.png" },
         { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" },
+        { name: "Shadcn/ui", icon: "/icons/Shadcn.png" },
         { name: "Prisma", icon: "/icons/Prisma.png" },
         { name: "Clerk", icon: "/icons/Clerk.png" }, 
         { name: "npm", icon: "/icons/Npm.png" },
@@ -85,7 +88,8 @@ export const config = {
         { name: "React", icon: "/icons/React.png" },
         { name: "TypeScript", icon: "/icons/TypeScript.png" },
         { name: "Three.js", icon: "/icons/threejs.png" },
-        { name: "GSAP", icon: "/icons/GSAP.png" }
+        { name: "GSAP", icon: "/icons/GSAP.png" },
+        { name: "npm", icon: "/icons/Npm.png" },
       ]
     },
     {
@@ -96,9 +100,11 @@ export const config = {
         { name: "React", icon: "/icons/React.png" },
         { name: "Three.js", icon: "/icons/threejs.png" },
         { name: "TypeScript", icon: "/icons/TypeScript.png" },
-        { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" }
+        { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" },
+        { name: "npm", icon: "/icons/Npm.png" },
       ]
     },
+
 
   ],
   contact: {
