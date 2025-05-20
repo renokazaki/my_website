@@ -1,9 +1,10 @@
 import SectionTitle from "../SectionTitle"
 import ParkBench from "../../ModelsComponents/ParkBench"
 import Mailbox from "../../ModelsComponents/Mailbox"
-import Pigeon from "../../ModelsComponents/Pigeon"
 import { Cloud, Float, PresentationControls } from "@react-three/drei"
 import { useMobile } from "../../../hooks/useMobile"
+import { Balloon } from "../../ModelsComponents/Balloon"
+import * as THREE from "three"
 
 export const ContactSection = ({SECTIONS_DISTANCE}: {SECTIONS_DISTANCE: number}) => {
   const {isMobile} = useMobile();
@@ -37,8 +38,18 @@ export const ContactSection = ({SECTIONS_DISTANCE}: {SECTIONS_DISTANCE: number})
             </PresentationControls>
 
           </group>
+          <group position={[-2, 1, -6]} scale={2.5}>
           <PresentationControls>
 
+          <Balloon color={new THREE.Color("red")} position-x={-0.2} position-z={0.3}/>
+          <Balloon color={new THREE.Color("blue")} position-x={0} position-y={0.3}/>
+          <Balloon color={new THREE.Color("green")} position-x={0.1}  position-y={-0.1}/>
+          <Balloon color={new THREE.Color("yellow")} position-x={-0.4} position-y={0.3} position-z={-0.3}/>
+
+          </PresentationControls>
+          </group>
+
+          <PresentationControls>
           <Mailbox
             scale={0.25}
             rotation-y={1.25 * Math.PI}
@@ -49,15 +60,7 @@ export const ContactSection = ({SECTIONS_DISTANCE}: {SECTIONS_DISTANCE: number})
           </PresentationControls>
 
           <Float floatIntensity={1.5} speed={3}>
-          <PresentationControls>
-
-            <Pigeon
-              position-x={2}
-              position-y={1.5}
-              position-z={-0.5}
-              scale={0.3}
-            />
-            </PresentationControls>
+    
 
           </Float>
         </group>

@@ -1,3 +1,4 @@
+
 export const config = {
   title: "3D Web Developer",
   sections: ["home",  "projects","profile", "contact"],
@@ -80,27 +81,27 @@ export const config = {
     about: {
       profile: {
         title: "プロフィール",
-        icon: "/icons/profile.png",
+        icon: "User",
         content: "名前：岡崎 蓮\n西暦：1999年8月21日 25歳\n"
       },
       education: {
         title: "学歴・職歴",
-        icon: "/icons/education.png",
+        icon: "GraduationCap",
         content: "2023年 駒澤大学 卒業\n2023-現在 株式会社ウィズ・ワン エンジニア"
       },
       skills: {
         title: "保有資格",
-        icon: "/icons/skills.png",
+        icon: "Award",
         content: "・TOEIC スコア830点\n・基本情報技術者試験\n・ServiceNow CSA\n・ServiceNow CAD\n・ServiceNow ITSM\n・秘書技能検定準1級",
       },
       personality: {
         title: "性格",
-        icon: "/icons/values.png",
-        content: "・前向き\n・向上心\n・大食い"
+        icon: "Heart",
+        content: "・前向き\n・向上心"
       },
       hobbies: {
         title: "趣味",
-        icon: "/icons/hobbies.png",
+        icon: "Coffee",
         content: "・運動\n・映画鑑賞\n・旅行\n"
       },
     },
