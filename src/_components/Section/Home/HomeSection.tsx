@@ -7,6 +7,8 @@ import Star from "../../ModelsComponents/Star"
 import MacBookPro from "../../ModelsComponents/MacBookPro"
 import * as THREE from "three"
 import { useMobile } from "../../../hooks/useMobile"
+import Seagulls from "../../ModelsComponents/Seagulls"
+// import Birds from "../../ModelsComponents/Birds"
 
 export const HomeSection = () => {
   const {isMobile} = useMobile();
@@ -36,7 +38,7 @@ export const HomeSection = () => {
             </PresentationControls>
 
             <Star position-z={0} position-y={2.2} scale={0.3} />
-
+            <Seagulls position={[-20, -5, -15]}/>
           <Float floatIntensity={2} speed={2}>
             <PresentationControls>
             <MacBookPro
@@ -49,7 +51,7 @@ export const HomeSection = () => {
             </PresentationControls>
 
           </Float>
-
+          {/* <Birds /> */}
           <PalmTree
             scale={0.018}
             rotation-y={THREE.MathUtils.degToRad(140)}
