@@ -10,6 +10,7 @@ export const config = {
     {
       name: "習慣応援SNS",
       image: "../textures/ActiveLink.PNG",
+      repository: "https://github.com/renokazaki/ActiveLink",
       link: "https://active-link-frontend.vercel.app",
       techIcons: [
         { name: "Next.js", icon: "/icons/Nextjs.png" },
@@ -20,11 +21,14 @@ export const config = {
         { name: "Prisma", icon: "/icons/Prisma.png" },
         { name: "Clerk", icon: "/icons/Clerk.png" },
         { name: "Bun",icon: "/icons/Bun.png"},
-      ]
+      ],
+      description: "友人と習慣の継続を促しあえるSNSです。",
+      point: "バックエンドにhono.jsを活用し、SSRやuseOptinmistic、Suspenseを活用することでユーザビリティの向上を意識しました。"
     },
     {
       name: "タスク管理アプリ",
       image: "../textures/TaskManagement.png",
+      repository: "https://github.com/renokazaki/Task_Management",
       link: "https://task-management-application-sable.vercel.app/",
       techIcons: [
         { name: "Next.js", icon: "/icons/Nextjs.png" },
@@ -34,12 +38,14 @@ export const config = {
         { name: "Prisma", icon: "/icons/Prisma.png" },
         { name: "Clerk", icon: "/icons/Clerk.png" },
         { name: "npm", icon: "/icons/Npm.png" },
-
-      ]
+      ],
+      description: "タスクをカテゴリ別に優先度や進捗を管理するアプリです。",
+      point: "シンプルかつ直感的なインターフェースを提供し、グラフを導入することで登録されているタスクの進捗を可視化しました。普段自分が使う際に欲しい機能を考慮してタスク管理アプリを作成しました。"
     },
     {
       name: "家計簿アプリ",
       image: "../textures/MoneyManagement.PNG",
+      repository: "https://github.com/renokazaki/Money-Management",
       link: "https://moneymanagement-jade.vercel.app",
       techIcons: [
         { name: "Next.js", icon: "/icons/Nextjs.png" },
@@ -49,11 +55,14 @@ export const config = {
         { name: "Prisma", icon: "/icons/Prisma.png" },
         { name: "Clerk", icon: "/icons/Clerk.png" }, 
         { name: "npm", icon: "/icons/Npm.png" },
-      ]
+      ],
+      description: "収支を管理する家計簿アプリです。カレンダーから取引が行われた日付を表示することで日付ごとの取引履歴も確認できます。",
+      point: "バックエンドにhono.jsを活用し、SSRやuseOptinmistic、Suspenseを活用することでユーザビリティの向上を意識しました。"
     },
     {
       name: "縦スクロールサイト",
       image: "../textures/VerticalScroll.PNG",
+      repository: "https://github.com/renokazaki/first_gsap_scrollapp",
       link: "https://first-gsap-scrollapp.vercel.app",
       techIcons: [
         { name: "React", icon: "/icons/React.png" },
@@ -61,11 +70,14 @@ export const config = {
         { name: "Three.js", icon: "/icons/threejs.png" },
         { name: "GSAP", icon: "/icons/GSAP.png" },
         { name: "npm", icon: "/icons/Npm.png" },
-      ]
+      ],
+      description: "縦スクロールサイトです。",
+      point: "GSAPを活用してアニメーションを実装しました。モデルや背景を変更することで様々な用途のサイトを作成できます。"
     },
     {
       name: "ハンバーガー積み上げゲーム",
       image: "../textures/HamburgerStack.PNG",
+      repository: "https://github.com/renokazaki/Tower-Battle",
       link: "https://tower-battle.vercel.app",
       techIcons: [
         { name: "React", icon: "/icons/React.png" },
@@ -73,7 +85,9 @@ export const config = {
         { name: "TypeScript", icon: "/icons/TypeScript.png" },
         { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" },
         { name: "npm", icon: "/icons/Npm.png" },
-      ]
+      ],
+      description: "ハンバーガー積み上げゲームです。",
+      point: "Three.jsで提供されている物理法則を実装することで、よりリアルなゲーム体験ができるようにしました。"
     },
   ],
   
