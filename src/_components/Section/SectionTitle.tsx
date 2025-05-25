@@ -9,6 +9,7 @@ interface SectionTitleProps {
   "rotation-y"?: number;
   bevelEnabled?: boolean;
   bevelThickness?: number;
+  
 }
 
 export default function SectionTitle({ children, ...props }: SectionTitleProps) {

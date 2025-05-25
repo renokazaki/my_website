@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { HomeSection, ProfileSection, ProjectSection, ContactSection } from "./Section/index";
 import { config } from "../config";
+import Star from "./ModelsComponents/Star";
 
 const SECTIONS_DISTANCE = 10;
 
@@ -40,12 +41,8 @@ export default function Experience() {
     return (
     <>
       <Environment preset="sunset" />
-      <ambientLight intensity={2.5} />
-      <mesh>  
-        <boxGeometry />
-        <meshStandardMaterial color="white" />
-        </mesh>
-
+      <ambientLight intensity={3} />
+        <Star/>
         {/* Section */}
         <group ref={sceneContainer}>
        <HomeSection/>
