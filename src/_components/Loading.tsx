@@ -11,7 +11,7 @@ export const Loading = () => {
     >
       <div>
         <h1 className="text-6xl font-black text-text m-0">
-        Welcome
+        Loading...
         </h1>
         <div className="w-full h-4 bg-gray-500 relative overflow-hidden rounded mt-4">
           <div

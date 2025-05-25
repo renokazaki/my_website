@@ -134,7 +134,7 @@ export default function ProjectInterface(): JSX.Element {
               {/* ヘッダー */}
               <div className="relative">
                 <img
-                  className="w-full h-64 md:h-64 object-cover rounded-t-2xl"
+                  className="w-full h-48 md:h-75 object-cover rounded-t-2xl"
                   src={selectedProject.image}
                   alt={selectedProject.name}
                 />
@@ -148,13 +148,13 @@ export default function ProjectInterface(): JSX.Element {
               </div>
 
               {/* コンテンツ */}
-              <div className="p-6">
-                <h2 className="text-2xl md:text-3xl font-bold text-text mb-4">
+              <div className="p-4 md:p-6">
+                <h2 className="text-xl md:text-2xl font-bold text-text mb-4">
                   {selectedProject.name}
                 </h2>
 
                 {/* 使用技術 */}
-                <div className="mb-6">
+                <div className="mb-4 md:mb-6">
                   <h3 className="text-lg font-semibold text-text mb-3">使用技術</h3>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.techIcons?.map((tech: TechIcon, techIdx: number) => (
@@ -174,7 +174,7 @@ export default function ProjectInterface(): JSX.Element {
                 </div>
 
                 {/* プロジェクト詳細 */}
-                <div className="mb-6">
+                <div className="mb-4 md:mb-6">
                   <h3 className="text-lg font-bold text-text mb-3">プロジェクト詳細</h3>
                   <p className="text-text-light leading-relaxed">
                     {selectedProject.description}
@@ -182,7 +182,7 @@ export default function ProjectInterface(): JSX.Element {
                 </div>
 
                 {/* こだわりポイント */}
-                <div className="mb-8">
+                <div className="mb-4 md:mb-8">
                   <h3 className="text-lg font-semibold text-text mb-3">こだわりポイント</h3>
                   <p className="text-text-light leading-relaxed">
                     {selectedProject.point}
@@ -198,7 +198,7 @@ export default function ProjectInterface(): JSX.Element {
                       type="button"
                     >
                       <ExternalLink className="w-4 h-4" />
-                      リポジトリを見る
+                      リポジトリ
                     </button>
                   )}
                   <button
@@ -207,7 +207,7 @@ export default function ProjectInterface(): JSX.Element {
                     type="button"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    プロジェクトを見る
+                    プロジェクト
                   </button>
                 </div>
               </div>
