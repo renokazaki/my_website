@@ -1,6 +1,6 @@
 
 export const config = {
-  title: "3D Web Developer",
+  title: "Ren Okazaki",
   sections: ["home",  "projects","profile", "contact"],
   home: {
     title: "Ren Okazaki",
@@ -23,7 +23,7 @@ export const config = {
         { name: "Bun",icon: "/icons/Bun.png"},
       ],
       description: "友人と習慣の継続を促しあえるSNSです。",
-      point: "バックエンドにhono.jsを活用し、SSRやuseOptinmistic、Suspenseを活用することでユーザビリティの向上を意識しました。"
+      point: "バックエンドにHono.jsを採用し、Next.jsのSSRやReactのuseOptimistic、Suspenseを積極的に活用することでユーザビリティの向上を意識しました。"
     },
     {
       name: "タスク管理アプリ",
@@ -57,7 +57,7 @@ export const config = {
         { name: "npm", icon: "/icons/Npm.png" },
       ],
       description: "収支を管理する家計簿アプリです。カレンダーから取引が行われた日付を表示することで日付ごとの取引履歴も確認できます。",
-      point: "バックエンドにhono.jsを活用し、SSRやuseOptinmistic、Suspenseを活用することでユーザビリティの向上を意識しました。"
+      point: "バックエンドにhono.jsを採用し、Next.jsのSSRやReactのuseOptimistic、Suspenseを積極的に活用することでユーザビリティの向上を意識しました。"
     },
     {
       name: "縦スクロールサイト",
