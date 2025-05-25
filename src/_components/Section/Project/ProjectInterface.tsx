@@ -149,12 +149,12 @@ export default function ProjectInterface(): JSX.Element {
 
               {/* コンテンツ */}
               <div className="p-4 md:p-6">
-                <h2 className="text-xl md:text-2xl font-bold text-text mb-4">
+                <h2 className="text-xl md:text-2xl font-bold text-text md:mb-4">
                   {selectedProject.name}
                 </h2>
 
                 {/* 使用技術 */}
-                <div className="mb-4 md:mb-6">
+                <div className="mb-2 md:mb-6">
                   <h3 className="text-lg font-semibold text-text mb-3">使用技術</h3>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.techIcons?.map((tech: TechIcon, techIdx: number) => (
@@ -175,7 +175,7 @@ export default function ProjectInterface(): JSX.Element {
 
                 {/* プロジェクト詳細 */}
                 <div className="mb-4 md:mb-6">
-                  <h3 className="text-lg font-bold text-text mb-3">プロジェクト詳細</h3>
+                  <h3 className="text-lg font-bold text-text md:mb-3">プロジェクト詳細</h3>
                   <p className="text-text-light leading-relaxed">
                     {selectedProject.description}
                   </p>
@@ -183,14 +183,14 @@ export default function ProjectInterface(): JSX.Element {
 
                 {/* こだわりポイント */}
                 <div className="mb-4 md:mb-8">
-                  <h3 className="text-lg font-semibold text-text mb-3">こだわりポイント</h3>
+                  <h3 className="text-lg font-semibold text-text md:mb-3">こだわりポイント</h3>
                   <p className="text-text-light leading-relaxed">
                     {selectedProject.point}
                   </p>
                 </div>
 
                 {/* アクションボタン */}
-                <div className="flex gap-3 pt-4 border-t border-gray-200">
+                <div className="flex gap-3 md:pt-4 border-t border-gray-200">
                   {selectedProject.repository && (
                     <button
                       onClick={() => openRepository(selectedProject.repository!)}
