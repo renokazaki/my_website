@@ -1,6 +1,6 @@
 import SectionTitle from "../SectionTitle";
 import Mailbox from "../../ModelsComponents/Mailbox";
-import { Cloud, Float, PresentationControls } from "@react-three/drei";
+import { Float, PresentationControls } from "@react-three/drei";
 import { useMobile } from "../../../hooks/useMobile";
 
 
@@ -24,16 +24,6 @@ export const ContactSection = ({
             CONTACT
           </SectionTitle>
         </PresentationControls>
-
-        <group position-x={-2}>
-          <Cloud
-            position={[-3, 2, -5]}
-            segments={10}
-            speed={0.5}
-            opacity={0.5} // opacityを上げる
-            seed={3} // 形状の種（変更すると形が変わる）
-          />
-        </group>
         <PresentationControls>
           <Mailbox
             scale={0.25}
