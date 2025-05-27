@@ -103,6 +103,21 @@ export const config = {
       description: "ハンバーガー積み上げゲームです。",
       point: "Three.jsで提供されている物理法則を実装することで、よりリアルなゲーム体験ができるようにしました。"
     },
+    {
+      name: "ハンバーガー積み上げゲーム",
+      image: "../textures/HamburgerStack.PNG",
+      repository: "https://github.com/renokazaki/Tower-Battle",
+      link: "https://tower-battle.vercel.app",
+      techIcons: [
+        { name: "React", icon: "/icons/React.png" },
+        { name: "Three.js", icon: "/icons/threejs.png" },
+        { name: "TypeScript", icon: "/icons/TypeScript.png" },
+        { name: "Tailwind CSS", icon: "/icons/Tailwindcss.png" },
+        { name: "npm", icon: "/icons/Npm.png" },
+      ],
+      description: "ハンバーガー積み上げゲームです。",
+      point: "Three.jsで提供されている物理法則を実装することで、よりリアルなゲーム体験ができるようにしました。"
+    },
   ],
   
     // 自己紹介セクションの構造
