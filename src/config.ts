@@ -44,9 +44,9 @@ export const config = {
     },
     {
       name: "家計簿アプリ",
-      image: "../textures/MoneyManagement.PNG",
-      repository: "https://github.com/renokazaki/Money-Management",
-      link: "https://moneymanagement-jade.vercel.app",
+      image: "../textures/MoneyDiary.PNG",
+      repository: "https://github.com/renokazaki/MoneyDiary",
+      link: "https://money-diary-woad.vercel.app/",
       techIcons: [
         { name: "Next.js", icon: "/icons/Nextjs.png" },
         { name: "TypeScript", icon: "/icons/TypeScript.png" },
@@ -57,7 +57,7 @@ export const config = {
         { name: "npm", icon: "/icons/Npm.png" },
       ],
       description: "収支を管理する家計簿アプリです。カレンダーから取引が行われた日付を表示することで日付ごとの取引履歴も確認できます。",
-      point: "バックエンドにhono.jsを採用し、Next.jsのSSRやReactのuseOptimistic、Suspenseを積極的に活用することでユーザビリティの向上を意識しました。"
+      point: "ランディングページを作成し、ユーザ体験を考慮してシンプルで直感的なインターフェースを提供しました。"
     },
     {
       name: "縦スクロールサイト",
