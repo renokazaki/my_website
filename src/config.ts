@@ -60,8 +60,8 @@ export const config = {
       point: "ランディングページを作成し、ユーザ体験を考慮してシンプルで直感的なインターフェースを提供しました。"
     },
     {
-      name: "縦スクロールサイト",
-      image: "../textures/VerticalScroll.PNG",
+      name: "3Dモデル商品紹介サイト(iPhone)",
+      image: "../textures/IPhoneScroll.PNG",
       repository: "https://github.com/renokazaki/first_gsap_scrollapp",
       link: "https://first-gsap-scrollapp.vercel.app",
       techIcons: [
@@ -71,8 +71,8 @@ export const config = {
         { name: "GSAP", icon: "/icons/GSAP.png" },
         { name: "npm", icon: "/icons/Npm.png" },
       ],
-      description: "縦スクロールサイトです。",
-      point: "GSAPを活用してアニメーションを実装しました。モデルや背景を変更することで様々な用途のサイトを作成できます。"
+      description: "iPhoneの3DモデルとR3F、GSAPを使用した縦スクロールサイトです。モデルや背景を変更することで様々な用途のサイトに応用できます。",
+      point: "R3Fの機能とGSAPを活用してアニメーションを実装しました。"
     },
     {
       name: "ハンバーガー積み上げゲーム",
