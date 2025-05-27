@@ -75,6 +75,20 @@ export const config = {
       point: "R3Fの機能とGSAPを活用してアニメーションを実装しました。"
     },
     {
+      name: "3Dモデル商品紹介サイト(コーラ)",
+      image: "../textures/Coke.PNG",
+      repository: "https://github.com/renokazaki/coke",
+      link: "https://coke-chi.vercel.app/",
+      techIcons: [
+        { name: "React", icon: "/icons/React.png" },
+        { name: "TypeScript", icon: "/icons/TypeScript.png" },
+        { name: "Three.js", icon: "/icons/threejs.png" },
+        { name: "npm", icon: "/icons/Npm.png" },
+      ],
+      description: "私の大好きなコーラの3DモデルとR3Fを使用した縦スクロールサイトです。",
+      point: "R3Fの機能を活用して大好きなコーラの紹介サイトを作成しました。"
+    },
+    {
       name: "ハンバーガー積み上げゲーム",
       image: "../textures/HamburgerStack.PNG",
       repository: "https://github.com/renokazaki/Tower-Battle",
